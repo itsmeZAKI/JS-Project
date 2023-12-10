@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1 Supprimer un auteur
+    p Voulez-vous vraiment supprimer l'auteur suivant?
+    form(action=`/authors/${author.id}` method="POST")
+        button(type="submit") Supprimer
+    a(href=`/authors/${author.id}/edit`) Modifier l'auteur
+    a(href="/authors") Retourner à la liste des auteurs

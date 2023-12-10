@@ -1,0 +1,17 @@
+html
+ head
+    title #{title}
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js")
+ body
+    h1 #{title}
+    hr
+
+    // Liste des livres
+    ul
+        each book in books
+            li #{book.title} par #{book.author}
+
+    // Afficher le nombre total des livres
+    p Total de livres: #{books.length}
+
+    footer #{footerText}

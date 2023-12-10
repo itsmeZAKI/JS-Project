@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1 Détails de l'auteur
+    p Nom: #{author.name}
+    p Prénom: #{author.firstname}
+    p Nationalité: #{author.nationality}
+    a(href=`/authors/${author.id}/edit`) Modifier l'auteur
+    a(href="/authors") Retourner à la liste des auteurs
